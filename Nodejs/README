@@ -1,0 +1,7 @@
+# Code challenge in Nodejs
+
+## Installation
+
+```sh
+yarn install && yarn test
+```
