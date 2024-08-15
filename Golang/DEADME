@@ -1,0 +1,115 @@
+# movies API
+
+## Introduction
+This application is designed to demonstrate proficiency in Go by building a RESTful API that exposes information about movies..
+
+## Bare metal server
+note: install redis using default port 6379
+```sh
+go mod download && go run cmd/main.go
+
+```
+### run tests with coverage
+```sh
+go tool cover -func=coverage.out
+```
+### create swagger documentation
+```sh
+swag init -g cmd/main.go && go run cmd/main.go
+```
+
+### swagger
+http://localhost:8080/swagger/index.html
+
+## Docker instructions
+
+### Building the Docker Image
+Run the following commands in the root directory of the project:
+```sh
+docker compose build
+```
+### up the application using docker compose up
+```sh
+docker compose up -d
+```
+
+
+## Curls
+```sh
+# get list of movies
+curl --location 'localhost:8080/movies?page=10'
+
+# get movie detail by id
+curl --location 'localhost:8080/movies/200002'
+
+# create movie in cache
+curl --location 'localhost:8080/movies' \
+--header 'Content-Type: application/json' \
+--data '{
+    "id": 200002,
+    "title": "Test Movie 2",
+    "original_title": "Test Movie Original",
+    "overview": "This is a test overview for the movie. The movie is a thrilling experience that tests the boundaries of filmmaking.",
+    "release_date": "2023-07-21",
+    "runtime": 130,
+    "vote_average": 8.5,
+    "vote_count": 5000,
+    "poster_path": "/testPosterPath.jpg",
+    "backdrop_path": "/testBackdropPath.jpg",
+    "genres": [
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 18,
+            "name": "Drama"
+        }
+    ],
+    "production_companies": [
+        {
+            "id": 34567,
+            "logo_path": "/testLogoPath1.png",
+            "name": "Test Production Company 1",
+            "origin_country": "US"
+        },
+        {
+            "id": 78901,
+            "logo_path": "/testLogoPath2.png",
+            "name": "Test Production Company 2",
+            "origin_country": "UK"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        },
+        {
+            "iso_3166_1": "UK",
+            "name": "United Kingdom"
+        }
+    ],
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        },
+        {
+            "english_name": "Spanish",
+            "iso_639_1": "es",
+            "name": "Español"
+        }
+    ],
+    "budget": 50000000,
+    "revenue": 150000000,
+    "homepage": "https://www.testmovie.com",
+    "status": "Released",
+    "tagline": "The ultimate test of courage and strength.",
+    "video": false,
+    "adult": false
+}
+'
+
+```

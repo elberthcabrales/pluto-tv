@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMzYxMTI0ODMzMTEzYTY0MDE4NmEyYTNmNjE2NDM3MCIsIm5iZiI6MTcyMzUxMjI2NS4yODA5NzEsInN1YiI6IjY2YmFiM2ZmZjM1MWQyMzQxMzNmMDRkYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jqjwQY2HKa2Ps7Vwaw9HxtPx5iVXzdDHd1oZz4qZWMU
+      - REDIS_ADDR=redis:6379
+      - REDIS_PASSWORD=
+      - REDIS_DB=0
+      - API_URL=https://api.themoviedb.org/3
+
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
