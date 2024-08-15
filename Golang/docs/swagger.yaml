@@ -1,0 +1,186 @@
+definitions:
+  models.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+  models.Genre:
+    properties:
+      id:
+        type: integer
+      name:
+        type: string
+    type: object
+  models.Movie:
+    properties:
+      adult:
+        type: boolean
+      backdrop_path:
+        type: string
+      budget:
+        type: integer
+      genres:
+        items:
+          $ref: '#/definitions/models.Genre'
+        type: array
+      homepage:
+        type: string
+      id:
+        type: integer
+      original_title:
+        type: string
+      overview:
+        type: string
+      poster_path:
+        type: string
+      production_companies:
+        items:
+          $ref: '#/definitions/models.ProductionCompany'
+        type: array
+      production_countries:
+        items:
+          $ref: '#/definitions/models.ProductionCountry'
+        type: array
+      release_date:
+        type: string
+      revenue:
+        type: integer
+      runtime:
+        type: integer
+      spoken_languages:
+        items:
+          $ref: '#/definitions/models.SpokenLanguage'
+        type: array
+      status:
+        type: string
+      tagline:
+        type: string
+      title:
+        type: string
+      video:
+        type: boolean
+      vote_average:
+        type: number
+      vote_count:
+        type: integer
+    type: object
+  models.ProductionCompany:
+    properties:
+      id:
+        type: integer
+      logo_path:
+        type: string
+      name:
+        type: string
+      origin_country:
+        type: string
+    type: object
+  models.ProductionCountry:
+    properties:
+      iso_3166_1:
+        type: string
+      name:
+        type: string
+    type: object
+  models.SpokenLanguage:
+    properties:
+      english_name:
+        type: string
+      iso_639_1:
+        type: string
+      name:
+        type: string
+    type: object
+  models.SuccessResponse:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /movies:
+    get:
+      consumes:
+      - application/json
+      description: Get a list of movies
+      parameters:
+      - description: Page number
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Movie'
+            type: array
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get movies
+      tags:
+      - movies
+    post:
+      consumes:
+      - application/json
+      description: Save a movie in the cache
+      parameters:
+      - description: Movie to save
+        in: body
+        name: movie
+        required: true
+        schema:
+          $ref: '#/definitions/models.Movie'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.SuccessResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Save a movie
+      tags:
+      - movies
+  /movies/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Get a movie by its ID
+      parameters:
+      - description: Movie ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Movie'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/models.ErrorResponse'
+      summary: Get a movie by ID
+      tags:
+      - movies
+swagger: "2.0"
