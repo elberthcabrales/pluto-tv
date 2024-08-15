@@ -8,3 +8,14 @@ github.com/elberthcabrales/movies-api/pkg/config/config.go:37.2,37.21 1 1
 github.com/elberthcabrales/movies-api/pkg/config/config.go:40.53,42.54 2 1
 github.com/elberthcabrales/movies-api/pkg/config/config.go:42.54,44.3 1 1
 github.com/elberthcabrales/movies-api/pkg/config/config.go:45.2,45.21 1 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:20.79,21.16 1 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:21.16,31.17 4 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:31.17,33.4 1 0
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:34.3,34.49 1 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:37.2,39.3 1 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:43.68,46.16 3 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:46.16,49.3 2 0
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:50.2,51.12 2 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:55.59,58.16 3 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:58.16,61.3 2 1
+github.com/elberthcabrales/movies-api/pkg/cache/redis_cache.go:62.2,64.17 2 1
