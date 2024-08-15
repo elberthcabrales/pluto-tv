@@ -1,0 +1,38 @@
+# Pluto.tv 
+### Golang and Node.js Challenge
+This repository contains the solution for the Pluto.tv's challenge.
+
+# Nodejs Challenge Description
+
+Objective: Demonstrate proficiency in Node.js concepts, including asynchronous programming and Express.js API development.
+
+### Asynchronous Code
+
+1. Rewrite the function below from promises to use async/await style. Use a fake API endpoint [https://jsonplaceholder.typicode.com/todos/1](https://jsonplaceholder.typicode.com/todos/1) to fetch data:
+
+
+### Express API
+
+2. Create a simple Express.js server that has the following endpoints:
+- GET /movies - Returns a list of movies from the provided array.
+- POST /movies - Adds a new movie to the list.
+- GET /movies/:id - Returns the details of a movie by ID.
+
+### Concurrent Requests
+
+3. Change this code so instead of doing 10 requests one after the other, execute them all at once and log the response:
+
+
+# Go Challenge
+
+Objective: Demonstrate proficiency in Go by building a RESTful API that exposes information about movies.
+
+
+#### API Requirements:
+
+1. **Endpoints:**
+-  **GET /movies** - Returns a list of movies.
+-  **GET /movies/{id}** - Returns details of a movie by ID.
+-  **POST /movies** - Add a movie to your in memory cache
+2. **Cache**: After resources are retrieved, cache it in memory and make sure it's concurrent safe
+3. **Unit Tests:** Implement unit tests for what you think it's essential for this API
