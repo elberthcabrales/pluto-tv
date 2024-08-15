@@ -1,1 +1,10 @@
 mode: set
+github.com/elberthcabrales/movies-api/pkg/config/config.go:19.32,21.16 2 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:21.16,23.3 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:25.2,29.3 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:33.46,34.48 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:34.48,36.3 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:37.2,37.21 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:40.53,42.54 2 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:42.54,44.3 1 1
+github.com/elberthcabrales/movies-api/pkg/config/config.go:45.2,45.21 1 1
