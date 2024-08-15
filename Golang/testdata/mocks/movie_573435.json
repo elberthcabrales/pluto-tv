@@ -1,0 +1,34 @@
+{
+    "id": 573435,
+    "title": "Bad Boys: Ride or Die",
+    "original_title": "Bad Boys: Ride or Die",
+    "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+    "release_date": "2024-06-05",
+    "runtime": 115,
+    "vote_average": 7.628,
+    "vote_count": 1508,
+    "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+    "backdrop_path": "/3q01ACG0MWm0DekhvkPFCXyPZSu.jpg",
+    "genres": [
+        {"id": 28, "name": "Action"},
+        {"id": 80, "name": "Crime"},
+        {"id": 53, "name": "Thriller"},
+        {"id": 35, "name": "Comedy"}
+    ],
+    "production_companies": [
+        {"id": 5, "name": "Columbia Pictures", "origin_country": "US"}
+    ],
+    "production_countries": [
+        {"iso_3166_1": "US", "name": "United States of America"}
+    ],
+    "spoken_languages": [
+        {"iso_639_1": "en", "english_name": "English", "name": "English"}
+    ],
+    "budget": 100000000,
+    "revenue": 395707401,
+    "homepage": "https://www.badboys.movie",
+    "status": "Released",
+    "tagline": "Miami's finest are now its most wanted.",
+    "video": false,
+    "adult": false
+}

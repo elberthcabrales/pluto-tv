@@ -1,0 +1,77 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "id": 533535,
+            "title": "Deadpool & Wolverine",
+            "original_title": "Deadpool & Wolverine",
+            "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+            "release_date": "2024-07-24",
+            "vote_average": 7.839,
+            "vote_count": 1785,
+            "poster_path": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+            "backdrop_path": "/yDHYTfA3R0jFYba16jBB1ef8oIt.jpg",
+            "genre_ids": [28, 35, 878],
+            "adult": false,
+            "video": false
+        },
+        {
+            "id": 573435,
+            "title": "Bad Boys: Ride or Die",
+            "original_title": "Bad Boys: Ride or Die",
+            "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+            "release_date": "2024-06-05",
+            "vote_average": 7.6,
+            "vote_count": 1510,
+            "poster_path": "/oGythE98MYleE6mZlGs5oBGkux1.jpg",
+            "backdrop_path": "/3q01ACG0MWm0DekhvkPFCXyPZSu.jpg",
+            "genre_ids": [28, 80, 53, 35],
+            "adult": false,
+            "video": false
+        },
+        {
+            "id": 519182,
+            "title": "Despicable Me 4",
+            "original_title": "Despicable Me 4",
+            "overview": "Gru and Lucy and their girls—Margo, Edith and Agnes—welcome a new member to the Gru family, Gru Jr., who is intent on tormenting his dad. Gru also faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend Valentina, forcing the family to go on the run.",
+            "release_date": "2024-06-20",
+            "vote_average": 7.335,
+            "vote_count": 949,
+            "poster_path": "/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+            "backdrop_path": "/lgkPzcOSnTvjeMnuFzozRO5HHw1.jpg",
+            "genre_ids": [16, 10751, 35, 28],
+            "adult": false,
+            "video": false
+        },
+        {
+            "id": 762441,
+            "title": "A Quiet Place: Day One",
+            "original_title": "A Quiet Place: Day One",
+            "overview": "As New York City is invaded by alien creatures who hunt by sound, a woman named Sam fights to survive with her cat.",
+            "release_date": "2024-06-26",
+            "vote_average": 6.917,
+            "vote_count": 1253,
+            "poster_path": "/yrpPYKijwdMHyTGIOd1iK1h0Xno.jpg",
+            "backdrop_path": "/2RVcJbWFmICRDsVxRI8F5xRmRsK.jpg",
+            "genre_ids": [27, 878, 53],
+            "adult": false,
+            "video": false
+        },
+        {
+            "id": 831815,
+            "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+            "original_title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+            "overview": "When Bikini Bottom is scooped from the ocean, scientific squirrel Sandy Cheeks and her pal SpongeBob SquarePants saddle up for Texas to save their town.",
+            "release_date": "2024-08-01",
+            "vote_average": 6.352,
+            "vote_count": 122,
+            "poster_path": "/30YnfZdMNIV7noWLdvmcJS0cbnQ.jpg",
+            "backdrop_path": "/h2Qo9knqiotrgqg7efvFcJSqYuB.jpg",
+            "genre_ids": [16, 35, 12, 10751],
+            "adult": false,
+            "video": false
+        }
+    ],
+    "total_pages": 100,
+    "total_results": 5000
+}
